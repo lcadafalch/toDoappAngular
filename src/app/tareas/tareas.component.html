@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col fondocarta">
+            <div class="card cardproyecto ">
+                <div class="card-body cardproyecto">
+                    <h2> Todo App</h2> 
+                    <a (click) = "arrayItems()" class="btn-floating btn-large waves-effect waves-light red">
+                        <i class="material-icons">+</i></a>
+                       
+                    <div class="card deletePalabra">
+                            <input type="text" name="fname" class="inputUsuario">
+                    </div>
+                    
+                    <div *ngFor = "let arr of tareas; let i = index" >
+                           <hr>
+                        <span>{{arr}}</span><a (click) ="borrarItems(i)" class="waves-effect waves-light btn-small float-right">Del</a>
+
+                        </div>
+                       
+                </div>
+            </div>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
